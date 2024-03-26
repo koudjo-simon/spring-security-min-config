@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_security?createDatabaseIfNotExist=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true # Pour afficher les requêtes SQL dans la console
+        format_sql: true # Pour formater les requêtes SQL dans la console
+  application:
+    name: spring-security-ess
